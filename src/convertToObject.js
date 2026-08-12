@@ -5,8 +5,8 @@
  *
  * @return {object}
  */
-function convertToObject(stylesString) {
-  return stylesString
+function convertToObject(sourceString) {
+  return sourceString
     .split(';')
     .map((declaration) => declaration.trim())
     .filter((declaration) => declaration.length > 0)
